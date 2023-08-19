@@ -2,9 +2,8 @@ import { Container } from './styles'
 import React from 'react'
 
 export interface SectionProps {
-    title: string
-    children?: React.ReactNode
-
+  title: string;
+  children?: React.ReactNode;
 }
 export function Section({ title, children }: SectionProps) {
     return (

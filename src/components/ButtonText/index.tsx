@@ -2,19 +2,17 @@ import { Container } from './styles'
 import React from 'react'
 
 
-interface ButtonTextProps{
-    title: string
+interface ButtonTextProps {
+  title: string;
+  disable: boolean;
 }
 
-export function ButtonText({title}:ButtonTextProps){
-    return(
-        <Container>
-            <h4>
-            {title}
-            </h4>
-        </Container>
-    )
+export function ButtonText({ title, disable }: ButtonTextProps) {
+  return (
+    <Container disabled={disable}>
+      <h4>{title}</h4>
+    </Container>
+  );
 }
-
 
 

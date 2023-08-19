@@ -6,6 +6,7 @@ export default {
 
       white: "#F4EDE8",
       orange: "#FF9000",
+      orange2: "#F4A460",
 
       gray_100: "#999591",
       gray_300: "#666360",

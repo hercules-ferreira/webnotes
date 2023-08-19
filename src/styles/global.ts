@@ -19,8 +19,9 @@ body input-security, textarea, button{
     outline: none;
 }
 
-a{
+a, li{
     text-decoration: none;
+    list-style-type: none;
 }
 
 button, a {
