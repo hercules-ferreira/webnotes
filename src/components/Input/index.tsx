@@ -1,9 +1,10 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { Container } from "./styles";
+import { IconType as ReactIconType } from "react-icons";
 
 export interface InputProps {
   placeholder: string;
-  icon?: any;
+  icon?: ReactIconType;
 }
 
 export function Input({ placeholder, icon: Icon }: InputProps) {

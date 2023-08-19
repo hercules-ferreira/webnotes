@@ -60,6 +60,8 @@ background-color: ${({ theme }) => theme.bg_900};
 
 export const Content = styled.div`
 grid-area: content;
+padding: 4rem 4rem 0;
+overflow-y: auto;
 
 
 border-bottom-color: ${({ theme }) => theme.bg_700};

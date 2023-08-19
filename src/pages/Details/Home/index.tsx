@@ -1,6 +1,8 @@
 import { ButtonText } from "../../../components/ButtonText";
 import { Header } from "../../../components/Header";
 import { Input } from "../../../components/Input";
+import { Note } from "../../../components/Note";
+import { Section } from "../../../components/Section";
 
 import { Container, Brand, Menu, Search, Content, NewNote } from "./styles";
 import React from "react";
@@ -33,7 +35,28 @@ export function Home() {
         <Input placeholder="Search" icon={FiSearch} />
       </Search>
 
-      <Content></Content>
+      <Content>
+        <Section title="Minhas notas">
+          <Note
+            data={{
+              title: "React",
+              tags: [
+                { id: "1", name: "react" },
+                { id: "2", name: "typescript" },
+              ],
+            }}
+          />
+          <Note
+            data={{
+              title: "React",
+              tags: [
+                { id: "1", name: "react" },
+                { id: "2", name: "typescript" },
+              ],
+            }}
+          />
+        </Section>
+      </Content>
 
       <NewNote>
         <FiPlus />
