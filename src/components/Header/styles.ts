@@ -12,6 +12,7 @@ export const Container = styled.header`
   justify-content: space-between;
 
   padding: 0 5rem;
+  
 `;
 
 export const Profile = styled.div`
@@ -30,7 +31,7 @@ export const Profile = styled.div`
     margin-left: 1rem;
     line-height: 1.6;
     justify-content: center;
-
+  
     span {
       font-size: 1rem;
       color: ${({ theme }) => theme.gray_100};

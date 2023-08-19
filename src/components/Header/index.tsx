@@ -10,7 +10,7 @@ export function Header() {
           <img src="https://github.com/hercules-ferreira.png" alt="avatar" />
           <div>
             <span>Bem Vindo,</span>
-            <strong>Hercules Ferreira Ribeiro</strong>
+            <strong>Hercules Ferreira</strong>
           </div>
         </Profile>
 
