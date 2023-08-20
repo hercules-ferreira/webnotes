@@ -10,10 +10,10 @@ export const Container = styled.div`
     width: 100%;
 
     font-size: 1.3rem;
-    position: relative; // esse position vai ajudar o svg ficar posicionado de forma relativa ao input
+    position: relative; // svg tem position de forma relativa ao input
 
     padding: 1.6rem 1.6rem 1.6rem 4.6rem;
-
+    margin-bottom: .7rem;
     color: ${({ theme }) => theme.bg_900};
     background: ${({ theme }) => theme.bg_700};
     border: 0;
@@ -28,7 +28,7 @@ export const Container = styled.div`
     }
 
     &:hover {
-      background: ${({ theme }) => theme.orange2};
+      background: ${({ theme }) => theme.orange_200};
     }
 
     &:placeholder {
@@ -37,7 +37,7 @@ export const Container = styled.div`
   }
   svg {
     margin-left: 1.6rem;
-    position: absolute; // adiciona o position para mudar a posição do svg
-    z-index: 1; // essa propriedade move o svg para a camanda de cima deixando ele acima do input
+    position: absolute; 
+    z-index: 1; // para mover o svg - deixando-o acima do input
   }
 `;

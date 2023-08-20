@@ -2,18 +2,17 @@ import React from "react";
 import { Container } from "./styles";
 import { IconType as ReactIconType } from "react-icons";
 
-export interface InputProps {
+export interface TextareaProps {
   placeholder: string;
   icon?: ReactIconType;
-  type: string;
 }
 
-export function Input({ placeholder, type, icon: Icon }: InputProps) {
+export function Textarea({ placeholder, icon: Icon }: TextareaProps) {
   return (
     <Container>
       {Icon && <Icon size={20} />}
 
-      <input placeholder={placeholder} type={type} />
+      <textarea placeholder={placeholder} />
     </Container>
   );
 }

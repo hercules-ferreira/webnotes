@@ -7,15 +7,13 @@ export interface SectionProps {
 }
 export function Section({ title, children }: SectionProps) {
     return (
-        <Container>
-            <h2>
-                {title}
-                {children}
-            </h2>
-
-        </Container>
-
-    )
+      <Container>
+        <h2>
+          {title}
+          {children}
+        </h2>
+      </Container>
+    );
 }
 
 
