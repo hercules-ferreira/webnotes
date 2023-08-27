@@ -1,15 +1,16 @@
 import { Container } from "./styles";
 import React from 'react';
 
-export interface ButtonProps{
-    title: string
-    loading?: boolean
-
+interface ButtonProps {
+  title: string;
+  loading?: boolean;
+  onClick: React.MouseEventHandler<HTMLButtonElement>; // Adicionando a tipagem correta
 }
-export function Button({title, loading}:ButtonProps){
+
+export function Button({ title, loading = false, onClick }: ButtonProps) {
   return (
-    <Container type="button" disabled={loading}>
+    <Container type="button" disabled={loading} onClick={onClick}>
       {loading ? "Loading..." : title}
     </Container>
   );
-} 
+}
